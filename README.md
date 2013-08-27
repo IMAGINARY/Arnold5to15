@@ -3,7 +3,7 @@ PfCf5t15
 
 Sources of the book “Problems for children from 5 to 15” by V. I. Arnold
 
-from th Russian original
+from the Russian original
 
 http://www.mccme.ru/free-books/izdano/2004/VIA-taskbook.pdf
 
