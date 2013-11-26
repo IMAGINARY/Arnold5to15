@@ -1,24 +1,14 @@
-%\documentclass[12pt,a4paper]{article}
-%\usepackage[english]{babel}
-%\usepackage{amssymb}
-%\usepackage[dvips]{graphicx}
-%\setlength{\textwidth}{6.5in}
-%\setlength{\oddsidemargin}{0.0in}
-%\setlength{\evensidemargin}{0.0in} 
-%\setlength{\textheight}{9.5in}
-%\addtolength{\topmargin}{-0.8in}
+% compile with XeLaTeX
 
-\documentclass[12pt, spanish]{article}  % `article' with A4 paper size option
+\documentclass[12pt]{article}  % `article' with A4 paper size option
+
+\usepackage{polyglossia}
+\setdefaultlanguage{spanish}
+\setotherlanguage{english}
+\setromanfont{cmunrm.otf} % the package cm-unicode needs to be installed
+
 \usepackage{amsmath,amssymb,color,amscd,wrapfig}
-% Paquetes español
-\usepackage{babel}
-\usepackage[latin1]{inputenc}
-
-\ifx\pdfoutput\undefined
 \usepackage{graphicx}
-\else
-\usepackage[pdftex]{graphicx}
-\fi
 
 \marginparwidth 40pt
  \textwidth=140mm
@@ -750,7 +740,7 @@ $\log_{10} 125$, $\log_{10} 64$ con la misma precisi\'on.
 El n\'umero de Euler $e = 2{,}71828\dots$ se define como el l\'{\i}mite de la sucesi\'on
   $\left(1+\frac1n\right)^n$ para $n\to \infty$, y es igual a la suma de la serie  
 $1+\frac 1{1!} +\frac 1{2!}+\frac 1{3!}+\dots$. Tambi\'en se puede definir mediante la f\'ormula citada como
- $\ln (1+x)$: $\lim\limits_{x\to 0}\frac{\ln(1+x)}{x} = 1$. }\vspace{-\jot}
+ $\ln (1+x)$: $\lim\limits_{x\to 0}\frac{\ln(1+x)}{x} = 1$.}\vspace{-\jot}
 %
 $$
 \log_{10} a=\frac{\ln a}{\ln 10}
@@ -850,14 +840,12 @@ Esta historia real es tan incre\'{\i}ble que he decidido inclu\'{\i}rla aqu\'{\i
 \ 
 
 {\em
-\rightline{
-\begin{tabular}{l}
 Traducido por \\
 Victor Goryunov y Sabir Gusein-Zade \\
 de la versi\'on original en ruso: \\
 Mosc\'u, MCCME, 2004 \\
 ISBN 5-94057-183-2\\
-
+\\
 Traducci\'on ruso - ingl\'es:\\
 Victor Goryunov y Sabir Gusein-Zade\\
 \\
@@ -877,9 +865,5 @@ Archivos del
 Mathematisches \\Forschungsinstitut Oberwolfach.
 \\
 Este libro est\'a disponible por la licencia CC BY-NC-SA 3.0 en la plataforma IMAGINARY: www.imaginary.org/background-materials.
-
-
-\end{tabular}
-}
 }
 \end{document}}
