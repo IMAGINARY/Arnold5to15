@@ -1,11 +1,24 @@
-% compile with XeLaTeX
+% compile with XeLaTeX or LuaLaTeX
 
 \documentclass[12pt]{article}  % `article' with A4 paper size option
 
+\usepackage{fontspec}
+\setmainfont[
+	Ligatures=TeX,
+	Extension=.otf,
+	SlantedFont=cmunsl,
+	BoldFont=cmunbx,
+	ItalicFont=cmunti,
+	BoldItalicFont=cmunbi,
+	SmallCapsFont=cmunrm, % for upright instead of slanted small caps
+	SmallCapsFeatures={Letters=SmallCaps},	
+]{cmunrm}
+
+\usepackage{microtype}
+
 \usepackage{polyglossia}
 \setdefaultlanguage{spanish}
-\setotherlanguage{english}
-\setromanfont{cmunrm.otf} % the package cm-unicode needs to be installed
+\setotherlanguage{russian}
 
 \usepackage{amsmath,amssymb,color,amscd,wrapfig}
 \usepackage{graphicx}
@@ -839,7 +852,7 @@ Esta historia real es tan incre\'{\i}ble que he decidido inclu\'{\i}rla aqu\'{\i
 
 \ 
 
-{\em
+{%\em
 Traducido por \\
 Victor Goryunov y Sabir Gusein-Zade \\
 de la versi\'on original en ruso: \\
@@ -855,7 +868,7 @@ Valladolid, RSME-UVA, 2013\\
 Con apoyo de la Real Sociedad Matem\'atica Espa\~{n}ola (www.rsme.es)\\
 \\
 Del original ruso:\\
-В. И. Арнольд: Задачи для детей от 5 до 15 лет\\
+\textrussian{В. И. Арнольд: Задачи для детей от 5 до 15 лет}\\
 Moskau, MCCME, 2004\\
 ISBN 5-94057-183-2\\
 \\
