@@ -1,0 +1,51 @@
+\documentclass[10pt,a5paper,twoside]{article}
+\usepackage[top=12mm,bottom=26mm,outer=28mm,inner=14mm,foot=14mm]{geometry}
+\usepackage{calc}
+\usepackage{scrextend}
+\deffootnote[1.5em]{0em}{1em}{\thefootnotemark\quad}
+\renewcommand{\footnoterule}{%
+  \kern -2.4pt
+  \hrule width \textwidth height 0.4pt
+  \kern 2pt
+}
+
+\usepackage{fontspec}
+\setmainfont[
+	Ligatures=TeX,
+	Extension=.otf,
+	SlantedFont=cmunsl,
+	BoldFont=cmunbx,
+	ItalicFont=cmunti,
+	BoldItalicFont=cmunbi,
+	SmallCapsFont=cmunrm, % for upright instead of slanted small caps
+	SmallCapsFeatures={Letters=SmallCaps},	
+]{cmunrm}
+
+\usepackage{microtype,ellipsis}
+
+\usepackage{polyglossia}
+\setotherlanguage{russian} % the name of the original Russian version at the end of this book is written using Cyrillic letters
+
+\usepackage{textcomp}
+
+\usepackage{amsmath,amssymb,nicefrac,amscd}
+\usepackage{graphicx,float}
+\usepackage{pdfpages}
+
+\usepackage{enumitem}
+\setitemize[1]{noitemsep,nosep,leftmargin=0.99em,label={--}}
+
+\usepackage{transparent}
+\usepackage{csquotes}
+\usepackage{siunitx}
+\sisetup{per-mode=fraction,fraction-function=\nicefrac}
+\DeclareSIUnit[number-unit-product=\,]\uhr{Uhr}
+\DeclareSIUnit[number-unit-product=\,]\zoll{Zoll}
+
+\usepackage{hyperref}
+
+\usepackage{todonotes}
+
+\newcommand{\eps}{\varepsilon}
+\newenvironment{problem}[1]{\paragraph*{#1}}{}
+\newenvironment{note}[1]{\par\noindent\textsc{#1} }{\par}
