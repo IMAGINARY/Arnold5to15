@@ -18,7 +18,7 @@
 	ItalicFont=cmunti,
 	BoldItalicFont=cmunbi,
 	SmallCapsFont=cmunrm, % for upright instead of slanted small caps
-	SmallCapsFeatures={Letters=SmallCaps},	
+	SmallCapsFeatures={Letters=SmallCaps,Numbers=OldStyle},	
 ]{cmunrm}
 
 \usepackage{microtype,ellipsis}
@@ -48,4 +48,4 @@
 
 \newcommand{\eps}{\varepsilon}
 \newenvironment{problem}[1]{\paragraph*{#1}}{}
-\newenvironment{note}[1]{\par\noindent\textsc{#1} }{\par}
+\newenvironment{note}[1]{\par\noindent\textsc{\MakeLowercase{#1}} }{\par}
