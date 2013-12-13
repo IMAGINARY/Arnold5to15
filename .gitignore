@@ -3,3 +3,6 @@
 *.out
 
 *.tex~
+
+*.fdb_latexmk
+*.fls
