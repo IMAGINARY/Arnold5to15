@@ -1,7 +1,6 @@
 % compile with XeLaTeX or LuaLaTeX
 
 % ToDo:
-% - csquotes
 % - units
 % - sections
 % - item/enum lists
@@ -33,10 +32,9 @@ universitarios.
 El libro est\'a dirigido a estudiantes, desde el colegio hasta la universidad, a profesores, 
 a padres y, en general, a todo el mundo que considere que el pensamiento es una parte fundamental del desarrollo personal.
 \end{abstract}
-
 \clearpage 
 
-\section*{Preface\todo{translate}}
+\section*{Pr\'{o}logo}
 Reun\'{\i} estos problemas en unas hojas de papel en la primavera de 2004 en Par\'{\i}s, cuando unos rusos 
 que viv\'{\i}an all\'{\i} me pidieron ayuda para que sus hijos adquirieran el pensamiento tradicional en Rusia.
 
@@ -46,7 +44,7 @@ temprana sobre lo simple, pero no sobre preguntas f\'aciles similares a las prop
 
 Mi larga experiencia ha mostrado que, con mucha frecuencia, los alumnos que suspenden en el colegio 
 resuelven mejor los problemas que los mejores estudiantes de la clase, ya que -- para sobrevivir al final
- de la clase -- deben pensar permanentemente m\'as de lo necesario ``para ser los reyes de mambo", 
+ de la clase -- deben pensar permanentemente m\'as de lo necesario \enquote{para ser los reyes de mambo}, 
  como sol\'{\i}a decir F\'{\i}garo sobre s\'{\i} mismo,
 cuando los estudiantes de sobresaliente no pueden entender qu\'e debe multiplicarse por qu\'e en estos problemas.
 Tambi\'en he reparado en que los ni\~nos de cinco a\~nos resuelven problemas similares mejor 
@@ -55,8 +53,8 @@ que ganan a sus profesores (los que peor han resuelto los problemas sencillos ha
 Nobel y Fields).   
 
 \clearpage
-\section*{The problems\todo{translate}}
-\noindent
+\section*{Los problemas}
+
 \begin{problem}{1.}
 	A Masha le faltan siete c\'opecas para comprar un libro de primera lectura, y a Misha le falta una.
 	Juntaron su dinero para comprar un solo libro y compartirlo, pero aun as\'{\i} no ten\'{\i}an suficiente.
@@ -135,21 +133,6 @@ Nobel y Fields).
 	Las p\'aginas de cada uno de ellos tienen un grosor de 2 cm, y las cubiertas --delantera y trasera 
 	-- de 2 mm. Una polilla ha carcomido el libro (perpendicularmente a las p\'aginas) desde la primera del volumen 1 hasta
 	la \'ultima del volumen 2.
-	%\begin{wrapfigure}{r}{3cm}
-	%\vspace{-\baselineskip}
-	%\centering % \advance\rightskip2.5mm 
-	%\footnotesize
-	%\includegraphics{taskbook-99}\\[2pt]
-	%Top view\\[6pt]
-	%\includegraphics{taskbook-98}\\[2pt]
-	%Front view\\[24pt]
-	%\includegraphics{taskbook-97}\\[24pt]
-	%\includegraphics{taskbook-1}\\[18pt]
-	%\includegraphics{taskbook-2}\\[6pt]
-	%\end{wrapfigure}
-	?`Cu\'anto mide el rastro que ha dejado la polilla?
-	%\newline
-
 	[Este problema topol\'ogico con una respuesta incre\'{\i}ble -- 4 mm -- es imposible para los acad\'emicos,
 	pero hay ni\~nos peque\~nos que lo resuelven f\'acilmente.]  
 \end{problem}
@@ -158,19 +141,18 @@ Nobel y Fields).
 	Encontrar el cuerpo cuyas vistas en planta y alzado sean como las que se representan (politopos).
 	Representar su perfil (dibujando los lados invisibles del politopo en l\'{\i}nea discont\'{\i}nua).
 	\begin{figure}
-		\includegraphics{taskbook-99} \qquad\qquad
-	\includegraphics{taskbook-98}
-	\\[2pt]
-	\hspace{1pt} 
-	Planta
-	\hspace{43pt} Alzado
+		\footnotesize
+		\null\hfill
+		\parbox{0.2\linewidth}{\centering\includegraphics{taskbook-99}\\Planta}
+		\hfill
+		\parbox{0.2\linewidth}{\centering\includegraphics{taskbook-98}\\Alzado}
+		\hfill\null
 	\end{figure}
 \end{problem}
 
 \begin{problem}{15.}
 	?`De cu\'antas maneras se puede descomponer el n\'umero 64 en 10 sumandos naturales (enteros $\ge 1$),
 	tales que el m\'aximo sea 12?
-	%\newline
 	[Las formas que s\'olo difieran en el orden de los sumandos no se cuentan como diferentes.]
 \end{problem}
 
@@ -205,15 +187,6 @@ Nobel y Fields).
 
 \begin{problem}{19.}
 	Una oruga quiere deslizarse desde una esquina de una habitaci\'on c\'ubica (la esquina izquierda del suelo) a la opuesta (la esquina derecha del techo).
-	%\begin{wrapfigure}{r}{3.0cm}
-	%\centering 
-	%\includegraphics{taskbook-3}\\[8pt]
-	%\includegraphics{taskbook-4}\\[8pt]
-	%\includegraphics{taskbook-6}\\[8pt]
-	%\includegraphics{taskbook-7}\\[8pt]
-	%\includegraphics{taskbook-9}\\[6pt]
-	%\includegraphics{taskbook-10}\\[6pt]
-	%\end{wrapfigure}
 	Encontrar el camino m\'as corto para el viaje por las paredes de la habitaci\'on.
 	\begin{figure}
 		\includegraphics{taskbook-3}
@@ -222,7 +195,6 @@ Nobel y Fields).
 
 \begin{problem}{20.}
 	Se tienen dos vasos de vol\'umenes 5 litros y 3 litros. Medir un litro (obtenerlo en uno de los vasos).
-
 	\begin{figure}
 		\includegraphics{taskbook-4}
 	\end{figure}
@@ -250,17 +222,12 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{24.}
-	Dibujar una recta que pase por el centro de un cubo y tal que la suma de los cuadrados de las distancias a los ocho v\'ertices del cubo sea:
-	\newline
-	a) m\'axima,
-	\newline
-	b) m\'{\i}nima (comparar con otras rectas que pasen por el centro).
+	Dibujar una recta que pase por el centro de un cubo y tal que la suma de los cuadrados de las distancias a los ocho v\'ertices del cubo sea: a) m\'axima, b) m\'{\i}nima (comparar con otras rectas que pasen por el centro).
 \end{problem}
 
 \begin{problem}{25.}
 	Un cono circular recto se corta con un plano dando lugar a una curva cerrada. Se inscriben dos bolas en el cono, tangentes al plano en los puntos $A$ y $B$ respectivamente. 
-	Encontrar un punto $C$ en la l\'{\i}nea de corte tal que la suma de las distancias $CA + CB$ sea:
-	a) m\'axima, b) m\'{\i}nima.
+	Encontrar un punto $C$ en la l\'{\i}nea de corte tal que la suma de las distancias $CA + CB$ sea: a) m\'axima, b) m\'{\i}nima.
 	\begin{figure}
 		\includegraphics{taskbook-9}
 	\end{figure}
@@ -275,15 +242,7 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{27.}
-	Probar que al dividir el n\'umero $2^{p-1}$ por el primo impar $p$ es resto es 1
-	(ejemplos: $2^2 = 3a +1,$ $2^4 = 5b+1,$ $2^6 = 7c+1,$ 
-	%\begin{wrapfigure}{r}{3cm}
-	%\includegraphics{taskbook-12}\\[12pt]
-	%\includegraphics{taskbook-131}\\tetrahedron (tetra${}= 4$)\\[8pt]
-	%\includegraphics{taskbook-132}\\octahedron (octo${}= 8$)\\[8pt]
-	%{\Huge {}\hskip20pt ?}\\ icosahedron\vspace{3pt}
-	%\end{wrapfigure}
-	$2^{10} - 1 = 1023 = 11\cdot 93$).  
+	Probar que al dividir el n\'umero $2^{p-1}$ por el primo impar $p$ es resto es 1 (ejemplos: $2^2 = 3a +1$, $2^4 = 5b+1$, $2^6 = 7c+1$, $2^{10} - 1 = 1023 = 11\cdot 93$).  
 \end{problem}
 
 \begin{problem}{28.}
@@ -297,36 +256,31 @@ Nobel y Fields).
 	Uno puede realizar este experimento (como lo hice yo cuando ten\'{i}a 10 a\~nos) con $N=100$ en lugar de un mill\'on de lanzamientos.
 	[La respuesta a este problema es sorprendente: $\frac2{\pi}N$. Adem\'as incluso doblando la aguja hasta una longitud $a \cdot 10$
 	cm el n\'umero de intersecciones observadas en $N$ lanzamientos es aproximadamente $\frac{2a}{\pi}N$. 
-	El n\'umero $\pi \approx  \frac{355}{113} \approx \frac{22}7.$]
+	El n\'umero $\pi \approx  \frac{355}{113} \approx \frac{22}7$.]
 \end{problem}
 
 \begin{problem}{29.}
 	Los poliedros con caras triangulares son, por ejemplo, s\'olidos plat\'onicos: tetraedro (4 caras), octaedro (8 caras), icosaedro (20 -- y todas las caras son iguales; es interesante dibujarlo, tiene 20 v\'ertices y 30 aristas).
 	\begin{figure}
-	\hspace{5pt}
-	\includegraphics{taskbook-131}\hspace{68pt}
-	\includegraphics{taskbook-132}\\ \vspace{3pt}
-	tetraedro (tetra${}= 4$) \hspace{40pt}
-	octaedro (octo${}= 8$)\\[25pt]
-	{\Huge 
-	%{}\hskip20pt 
-	?}\\ icosaedro\vspace{3pt}
+		\footnotesize
+		\null\hfill
+		\parbox{0.3\linewidth}{\centering\includegraphics{taskbook-131}\\tetraedro ($\text{tetra}= 4$)}
+		\hfill
+		\parbox{0.3\linewidth}{\centering\includegraphics{taskbook-132}\\octaedro ($\text{octo}= 8$)}
+		\hfill\null\\
+		{\Huge ?}\\icosaedro
 	\end{figure}
-
 	?`Es cierto que para todos \'estos (poliedros cerrados convexos con caras triangulares) el n\'umero de caras es igual a dos veces el n\'umero de v\'ertices menos cuatro?
 
-	\noindent
-	%\begin{figure}
-	{\bf Otro s\'olido plat\'onico (en total hay 5):}\\
+	\bf Otro s\'olido plat\'onico (en total hay 5):
 	\begin{figure}
-		\includegraphics{taskbook-14}\\[2pt]
+		\includegraphics{taskbook-14}
 	\end{figure}
 \end{problem}
 
 \begin{problem}{30.}
 	Un dodecaedro es un poliedro convexo con doce caras que son pent\'agonos (regulares), veinte v\'ertices y treinta aristas
 	(sus v\'ertices son los centros de las caras de un icosaedro).
-
 	Inscribir en un dodecaedro cinco cubos (los v\'ertices de cada cubo son v\'ertices del dodecaedro)
 	cuyas aristas son diagonales de las caras del dodecaedro (el dodecaedro tiene 12 aristas, una en cada cara).
 	[Esto lo invent\'o Kepler al interesarse por los planetas.] 
@@ -334,7 +288,6 @@ Nobel y Fields).
 
 \begin{problem}{31.}
 	Encontrar la intersecci\'on de dos tetraedros inscritos en un cubo (tales que los v\'ertices de cada uno lo son tambi\'en del cubo, y las aristas son diagonales de las caras). 
-
 	?`Qu\'e fracci\'on del volumen del cubo est\'a contenido en la intersecci\'on de los tetraedros?
 \end{problem}
 
@@ -342,18 +295,17 @@ Nobel y Fields).
 	Construir la secci\'on de un cubo por un plano que pasa por tres puntos dados en las aristas.
 	[Dibujar el pol\'{\i}gono resultante de la intersecci\'on con las caras del cubo.]
 	\begin{figure}
-	% \includegraphics{taskbook-15}
+		\includegraphics{taskbook-15}
 	\end{figure}
 \end{problem}
 
 \begin{problem}{32.}
 	?`Cu\'antas simetr\'{\i}as tiene tetraedro??`Cu\'antas tiene un cubo??`Y un octaedro??`Y un icosaedro? ?`Y un dodecaedro? La simetr\'{\i}a es una transformaci\'on que conserva las distancias.
-
 	Entre las simetr\'{\i}as, ?`cu\'antas rotaciones hay? y entre \'estas, ?`cu\'antas reflexiones? (en cada uno de los cinco casos propuestos)
 \end{problem}
 
 \begin{problem}{33.}
-	?`De cu\'antas formas diferentes se pueden colorear las 6 caras un cubo con seis colores (1,...,6) [uno por cada cara]
+	?`De cu\'antas formas diferentes se pueden colorear las 6 caras un cubo con seis colores $(1,\dotsc,6)$ [uno por cada cara]
 	de modo que los las formas sean distintos dos a dos (es decir, no se puede pasar de una forma a otra mediante una rotaci\'on)? 
 	\begin{figure}
 		\includegraphics{taskbook-17}
@@ -363,45 +315,45 @@ Nobel y Fields).
 \begin{problem}{34.}
 	?`De cu\'antas formas distintas se pueden permutar $n$ objetos?
 
-	Hay seis permutaciones posibles para $n=3$: (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), (3,2,1). ?`Cu\'antas hay para: $n=4$? $n=5$? $n=6$? $n=10$?
+	Hay seis permutaciones posibles para $n=3$: $(1,2,3)$, $(1,3,2)$, $(2,1,3)$, $(2,3,1)$, $(3,1,2)$, $(3,2,1)$. ?`Cu\'antas hay para: $n=4$? $n=5$? $n=6$? $n=10$?
 	\begin{figure}
 		\includegraphics{taskbook-18}
 	\end{figure}
 \end{problem}
 
 \begin{problem}{35.}
-	Un cubo tiene 4 diagonales largas ?`Cu\'antas permutaciones distintas de estos cuatro objetos se obtienen por rotaci\'on del cubo?
+	Un cubo tiene $4$ diagonales largas ?`Cu\'antas permutaciones distintas de estos cuatro objetos se obtienen por rotaci\'on del cubo?
 	\begin{figure}
 		\includegraphics{taskbook-19}
 	\end{figure}
 \end{problem}
 
 \begin{problem}{36.}
-	La suma de los cubos de tres enteros se resta del cubo de la suma de estos n\'umeros. ?`Esta diferencia es siempre divisible por 3?
+	La suma de los cubos de tres enteros se resta del cubo de la suma de estos n\'umeros. ?`Esta diferencia es siempre divisible por $3$?
 \end{problem}
 
 \begin{problem}{37.}
-	Misma pregunta con la potencia quinta y la divisivilidad por 5, y para la potencia s\'eptima y la divisibilidad por 7.
+	Misma pregunta con la potencia quinta y la divisivilidad por $5$, y para la potencia s\'eptima y la divisibilidad por $7$.
 \end{problem}
 
 \begin{problem}{38.}
 	Calcular la siguiente suma (con un margen de error del $1\%$).
 	\begin{equation*}
-	{1 \over 1\cdot 2} +  {1 \over 2\cdot 3} + {1 \over 3\cdot 4} + \dots + {1 \over 99\cdot 100}
+		\frac{1}{1\cdot 2} + \frac{1}{2\cdot 3} + \frac{1}{3\cdot 4} + \dotsb + \frac{1}{99\cdot 100}
 	\end{equation*}
 \end{problem}
 
 \begin{problem}{39.}
 	Si dos pol\'{\i}gonos tienen el mismo area, entonces se pueden cortar en un n\'umero finito de pol\'{\i}gonos, que reordenados permiten obtener el segundo a partir del primero y viceversa. !`Probarlo! [Para s\'olidos en el espacio esto no ocurre: !`un cubo y un tetraedro con el mismo volumen no se pueden cortar de esta forma!]
 	\begin{figure}
-		\includegraphics{q39_horizontal}\\[6pt]
+		\includegraphics{q39_horizontal}
 	\end{figure}
 \end{problem}
 
 \begin{problem}{40.}
 	Se eligen 4 v\'ertices de un paralelogramo entre los nodos de una cuadr\'{\i}cula. Si ning\'un nodo de la cuadr\'{\i}cula queda encerrado en el interior del paralelogramo, probar que el \'area del paralelogramo es igual al de cada uno de los cuadros de la cuadr\'{\i}cula. 
 	\begin{figure}
-		\includegraphics{taskbook-24}\vskip3pt
+		\includegraphics{taskbook-24}
 	\end{figure}
 \end{problem}
 
@@ -414,9 +366,8 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{43.}
-	Los n\'umeros del conejo (o de Fibonacci) forman la secuencia $(a_1=1)$, $1$, $2$, $3$, $5$, $8$, $13$, $21$,
-	$34$,\nobreak\ $\dots$, en la que $a_{n+2}=a_{n+1}+a_n$ para cada
-	$n=1$, $2$,\nobreak\ $\dots$ \   Encontrar el m\'aximo com\'un divisor (mcd) de los n\'umeros $a_{100}$ y $a_{99}$.
+	Los n\'umeros del conejo (o de Fibonacci) forman la secuencia $(a_1=1)$, $1,1,2,3,5,8,13,21,34,\allowbreak\dotsc$, en la que $a_{n+2}=a_{n+1}+a_n$ para cada
+	$n=1,2,\dotsc$ Encontrar el m\'aximo com\'un divisor (mcd) de los n\'umeros $a_{100}$ y $a_{99}$.
 \end{problem}
 
 \begin{problem}{44.}
@@ -424,7 +375,8 @@ Nobel y Fields).
 	Por ejemplo, $c(4)=2$, $c(5)=5$, $c(6)=14$. ?`Cu\'antos se pueden encontrar para $c(10)$?
 	\begin{figure}
 		\includegraphics{taskbook-281}
-	\hskip1cm\includegraphics{taskbook-282}
+		\qquad
+		\includegraphics{taskbook-282}
 	\end{figure}
 \end{problem}
 
@@ -433,89 +385,63 @@ Nobel y Fields).
 	El cuadro del torneo se puede escribir de forma simb\'olica como, por ejemplo,  $((a,(b,c)),d)$ que significa que $b$ juega contra $c$, y el ganador se cruza con $a$, y el ganador de \'estos con $d$].
 
 	?`Cu\'antos cuadros distintos hay para 10 equipos? 
-
-	Para 2 equipos, s\'olo puede ser $(a,b)$, luego un solo cuadro.
-
-	%{\advance\thinmuskip-2mu
-	%\noindent 
-	Para 3 equipos, s\'olo puede ser $((a,b),c)$, o $((a,c),b)$, o $((b,c),a)$, luego hay 3 posibles cuadros.
-
-	%\noindent 
-	Para 4 equipos:
-	%{\allowdisplaybreaks \advance\thinmuskip-.55mu
-	\begin{equation*}
-	\begin{array}{cccc}
-	(((a,b),c),d) & \quad (((a,c),b),d) & \quad (((a,d),b),c) & \quad (((b,c),a),d) \\
-	(((b,d),a),c) & \quad (((c,d),a),b) & \quad (((a,b),d),c) & \quad (((a,c),d),b) \\ 
-	(((a,d),c),b) & \quad (((b,c),d),a) & \quad (((b,d),c),a) & \quad (((c,d),b),a) \\
-	((a,b),(c,d)) & \quad ((a,c),(b,d)) & \quad ((a,d),(b,c))
-	% \displaybreak[4]
-	\end{array}
-	\end{equation*}
+	\begin{itemize}
+		\item Para 2 equipos, s\'olo puede ser $(a,b)$, luego un solo cuadro.
+		\item Para 3 equipos, s\'olo puede ser $((a,b),c)$, o $((a,c),b)$, o $((b,c),a)$, luego hay 3 posibles cuadros.
+		\item Para 4 equipos:
+			\begin{equation*}
+				\begin{array}{@{}cccc@{}}
+					(((a,b),c),d) & \quad\;(((a,c),b),d) & \quad\;(((a,d),b),c) & \quad\;(((b,c),a),d) \\
+					(((b,d),a),c) & \quad\;(((c,d),a),b) & \quad\;(((a,b),d),c) & \quad\;(((a,c),d),b) \\ 
+					(((a,d),c),b) & \quad\;(((b,c),d),a) & \quad\;(((b,d),c),a) & \quad\;(((c,d),b),a) \\
+					((a,b),(c,d)) & \quad\;((a,c),(b,d)) & \quad\;((a,d),(b,c))
+				\end{array}
+			\end{equation*}
+	\end{itemize}
 \end{problem}
 
 \begin{problem}{46.}
-	Unir $n$ puntos $1, 2, \dots, n$ con $n-1$ trazos (en una sola pieza) para obtener un \'arbol. ?`Cu\'antos \'arboles distintos se pueden obtener (!`el caso $n=5$ ya es interesante!)?
+	Unir $n$ puntos $1, 2, \dotsc, n$ con $n-1$ trazos (en una sola pieza) para obtener un \'arbol. ?`Cu\'antos \'arboles distintos se pueden obtener (!`el caso $n=5$ ya es interesante!)?
 
-	\medskip
-	%$n=2$:\quad \includegraphics{taskbook-291}\,,\quad el n\'umero es 1; 
+	$n=2$:\quad \includegraphics{taskbook-291}\,,\quad el n\'umero es 1; 
 
-	\medskip
 	$n=3$:\quad 
 	\includegraphics{taskbook-292}\,,\quad 
 	\includegraphics{taskbook-293}\,,\quad 
 	\includegraphics{taskbook-294}\,,\quad 
 	el n\'umero es 3;
 
-	\medskip
-	$n=4$:\quad\def\quad{\hskip.7em}
+	$n=4$:\quad
 	$\vcenter{\hbox{\includegraphics{taskbook-295}}}$,\quad
 	$\vcenter{\hbox{\includegraphics{taskbook-296}}}$,\quad
 	$\vcenter{\hbox{\includegraphics{taskbook-297}}}$,\quad
 	$\vcenter{\hbox{\includegraphics{taskbook-298}}}$,\quad
 	$\vcenter{\hbox{\includegraphics{taskbook-299}}\hbox{\includegraphics{taskbook-290}}
 	\vskip-8pt
-	\hbox to50bp{\dotfill}}$,\quad 
-	el n\'umero es 16.
+	\hbox to50bp{\dotfill}}$,\\ 
+	\null\hspace{\parindent}\phantom{$n=4$:}\quad el n\'umero es 16.
 \end{problem}
 
 \begin{problem}{47.}
-	Una pernutaci\'on $(x_1,x_2, \dots,x_n)$ de los n\'umeros $\{1, 2, \dots, n\}$ se denomina una
-	\emph{serpiente} (de longitud $n$) si $x_1<x_2>x_3<x_4 \dots$ \  .
-	\medskip
+	Una pernutaci\'on $(x_1,x_2, \dotsc,x_n)$ de los n\'umeros $\{1, 2, \dotsc, n\}$ se denomina una
+	\emph{serpiente} (de longitud $n$) si $x_1<x_2>x_3<x_4 \dotsb$.
 
-	%\noindent
-	{\sc Ejemplo:}
-	$\begin{aligned}[t]
-	&\begin{aligned}[t] n=2, \text{ only }  1<2, \end{aligned} &&\text{el n\'umero es  }1, \\
-	&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=3, \hphantom{\text{ only }} 1&<3>2 \\ 
-	                  2&<3>1\end{aligned} \right\}}, && \text{el n\'umero es  }2,  \\[2pt]
-	&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=4, \hphantom{\text{ only }} 1&<3>2<4 \\ 
-	                  1&<4>2<3 \\ 
-	        2&<3>1<4 \\ 
-	        2&<4>1<3 \\ 
-	        3&<4>1<2\end{aligned} \right\}},
-	        &&\text{el n\'umero es  }5. \\
-	\end{aligned}$
+	\begin{note}{Ejemplo:}\todo{translate the word \enquote{only} (there are 3 occurances in the source code of this problem!)}{}
+\begin{equation*}
+			\begin{aligned}[t]
+				&\begin{aligned}[t] n=2, \text{\ \ only\ \ } 1<2, \end{aligned} &&\text{el n\'umero es }1, \\
+				&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=3, \hphantom{\text{\ \ only\ \ }} 1&<3>2 \\ 
+				2&<3>1\end{aligned} \right\}}, && \text{el n\'umero es }2, \\[2pt]
+				&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=4, \hphantom{\text{\ \ only\ \ }} 1&<3>2<4 \\ 
+				1&<4>2<3 \\ 
+				2&<3>1<4 \\ 
+				2&<4>1<3 \\ 
+				3&<4>1<2\end{aligned} \right\}},
+				&&\text{el n\'umero es  }5. \\
+			\end{aligned}
+		\end{equation*}
+	\end{note}
 
-	%\vspace{\jot}
-	%\begin{equation*}
-	%\begin{aligned}[h]
-	%&\begin{aligned}[h] n=2, {\rm only }  1<2, \end{aligned} &&{\rm the \  number}=1, \\
-	%&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=3, \hphantom{{\rm only}} 1&<3>2 \\ 
-	%                                              2&<3>1\end{aligned} \right\}}, && {\rm the \  number}=2,  \\[2pt]
-	%&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=4, \hphantom{{\rm only }} 1&<3>2<4 \\ 
-	%                                              1&<4>2<3 \\ 
-	%                                    2&<3>1<4 \\ 
-	%                                    2&<4>1<3 \\ 
-	%                                    3&<4>1<2\end{aligned} \right\}},
-	%                                    &&{\rm the \  number}=5. \\
-	%\end{aligned}
-	%\end{equation*}
-
-	%\vspace{\jot}
-	\medskip
-	\noindent 
 	Encontrar el n\'umero de serpientes de longitud 10.
 \end{problem}
 
@@ -575,7 +501,7 @@ Nobel y Fields).
 	\end{equation*} 
 
 	%\noindent
-	\textsc{Respuesta:} ``la raz\'on aurea o n\'umero aureo",
+	\textsc{Respuesta:} \enquote{la raz\'on aurea o n\'umero aureo},
 	$\frac{\sqrt{5}+1}{2\vphantom)} \approx 1{,}618$. [Es la raz\'on de los lados de una tarjeta que es similar a la tarjeta resultante de quitar el cuadrado de lado el menor lado de la tarjeta,
 	$\frac{AB}{BC}=\frac{PC}{CD\vphantom)}$.] ?`Cu\'anto vale la raz\'on aurea relativa a un pent\'agono regular y una estrella de 5 puntas? 
 
@@ -679,7 +605,7 @@ Nobel y Fields).
 	\end{figure}
 
 	%\noindent 
-	Dibujar las trayectorias de un rayo en el medio ``aire en un desierto", donde el \'{\i}ndice $n(y)$ tiene un m\'aximo 
+	Dibujar las trayectorias de un rayo en el medio \enquote{aire en un desierto}, donde el \'{\i}ndice $n(y)$ tiene un m\'aximo 
 	a una determinada altura
 	(una soluci\'on a este problema explica los espejismos en un desierto a aquellos que entiendan c\'omo se relaccionan con las im\'agenes las trayectorias de los rayos que salen de los objetos).
 \end{problem}
@@ -782,7 +708,7 @@ Nobel y Fields).
 	Sea $g\colon M \to M$ la parte regular de un dominio acotado $M$ sobre si mismo uno-a-uno y que preserva las \'areas (vol\'umenes en el caso multidimensional) de los dominios.
 
 	Probar que en todo entorno $U$ de un punto $M$ cualquiera y para todo $N$ existe un punto $x$
-	tal que $g^T x$ tambi\'en est\'a en $U$ para un cierto entero $T>N$ (``el teorema de recurrencia").
+	tal que $g^T x$ tambi\'en est\'a en $U$ para un cierto entero $T>N$ (\enquote{el teorema de recurrencia}).
 \end{problem}
 
 \begin{problem}{74.}
@@ -821,7 +747,7 @@ Nobel y Fields).
 
 \ 
 
-\textsc{Nota sobre el problema 13.} Con este problema he intentado ilustrar la diferencia entre como abordan las tareas los matem\'aticos y los f\'{\i}sicos, en mi papel de invitado en la revista ``Physics -- Uspekhi"  durante la Navidad del a\~no 2000. El \'exito sobrepas\'o mis expectativas: como los editores, a diferencia de los ni\~nos de preescolar en quienes yo hab\'{\i}a basado mi experiencia, no lograron resolver el problema, lo modificaron de la siguiente manera para encontrar mi respuesta de 4mm: en lugar de ``desde la primera p\'agina del volumen 1 hasta la \'ultima del volumen 2",  escribieron ``desde la {\em \'ultima\/} p\'agina del volumen 1 hasta la {\em primera\/} p\'agina del volumen 2".
+\textsc{Nota sobre el problema 13.} Con este problema he intentado ilustrar la diferencia entre como abordan las tareas los matem\'aticos y los f\'{\i}sicos, en mi papel de invitado en la revista \enquote{Physics -- Uspekhi}  durante la Navidad del a\~no 2000. El \'exito sobrepas\'o mis expectativas: como los editores, a diferencia de los ni\~nos de preescolar en quienes yo hab\'{\i}a basado mi experiencia, no lograron resolver el problema, lo modificaron de la siguiente manera para encontrar mi respuesta de 4mm: en lugar de \enquote{desde la primera p\'agina del volumen 1 hasta la \'ultima del volumen 2},  escribieron \enquote{desde la {\em \'ultima\/} p\'agina del volumen 1 hasta la {\em primera\/} p\'agina del volumen 2}.
 
 Esta historia real es tan incre\'{\i}ble que he decidido inclu\'{\i}rla aqu\'{\i}: la prueba de esto es la versi\'on que publicaron los editores en la revista.  
 
