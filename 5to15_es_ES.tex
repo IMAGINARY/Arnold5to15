@@ -1,11 +1,4 @@
 % compile with XeLaTeX or LuaLaTeX
-
-% ToDo:
-% - units
-% - sections
-% - item/enum lists
-% - testsc -> note env
-
 \input{preamble}
 \setdefaultlanguage{spanish}
 
@@ -112,14 +105,14 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{10.}
-	Durante el d\'{\i}a un caracol sube 3 cent\'{\i}metros en un poste, y durante la noche, como se duerme, resbala
-	accidentalmente 2 cm hacia abajo. El poste tiene 10 m de altura, y encima de \'el hay un manjar (para el caracol). 
+	Durante el d\'{\i}a un caracol sube \SI{3}{\cm} en un poste, y durante la noche, como se duerme, resbala
+	accidentalmente \SI{2}{\cm} hacia abajo. El poste tiene \SI{10}{\metre} de altura, y encima de \'el hay un manjar (para el caracol). 
 	?`Cu\'anto tiempo tardar\'a en alcanzar el manjar?
 \end{problem}
 
 \begin{problem}{11.}
-	Un guardabosques camina desde su tienda 10 km en direcci\'on sur, gira hacia el este, camina en l\'{\i}nea recta
-	10 km m\'as en direcci\'on este, se encuentra con su amigo el oso, gira hacia el norte , y despu\'es de 10 km vuelve a
+	Un guardabosques camina desde su tienda \SI{10}{\km} en direcci\'on sur, gira hacia el este, camina en l\'{\i}nea recta
+	\SI{10}{\km} m\'as en direcci\'on este, se encuentra con su amigo el oso, gira hacia el norte , y despu\'es de \SI{10}{\km} vuelve a
 	estar en la tienda. ?`De qu\'e color era el oso y d\'onde ocurri\'o todo esto?
 \end{problem}
 
@@ -130,10 +123,10 @@ Nobel y Fields).
 
 \begin{problem}{13.}
 	Los dos primeros vol\'umenes de Pushkin est\'an uno al lado del otro en una estanter\'{\i}a. 
-	Las p\'aginas de cada uno de ellos tienen un grosor de 2 cm, y las cubiertas --delantera y trasera 
-	-- de 2 mm. Una polilla ha carcomido el libro (perpendicularmente a las p\'aginas) desde la primera del volumen 1 hasta
+	Las p\'aginas de cada uno de ellos tienen un grosor de \SI{2}{\cm}, y las cubiertas --delantera y trasera 
+	-- de \SI{2}{\mm}. Una polilla ha carcomido el libro (perpendicularmente a las p\'aginas) desde la primera del volumen 1 hasta
 	la \'ultima del volumen 2.
-	[Este problema topol\'ogico con una respuesta incre\'{\i}ble -- 4 mm -- es imposible para los acad\'emicos,
+	[Este problema topol\'ogico con una respuesta incre\'{\i}ble -- \SI{4}{\mm} -- es imposible para los acad\'emicos,
 	pero hay ni\~nos peque\~nos que lo resuelven f\'acilmente.]  
 \end{problem}
 
@@ -166,9 +159,9 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{17.}
-	La distancia entre las ciudades $A$ y $B$ es de 40 km. Dos ciclistas salen respectivamente de $A$ y de $B$ 
-	a la vez, dirigi\'endose el uno hacia el otro, uno con velocidad de 10 km/h y el otro con velocidad de 15 km/h. 
-	Una mosca sale desde el primer ciclista cuando est\'a en $A$ volando a una velocidad de 100km/h, toca la frente del 
+	La distancia entre las ciudades $A$ y $B$ es de \SI{40}{\km}. Dos ciclistas salen respectivamente de $A$ y de $B$ 
+	a la vez, dirigi\'endose el uno hacia el otro, uno con velocidad de \SI{10}{\km\per\hour} y el otro con velocidad de \SI{15}{\km\per\hour}. 
+	Una mosca sale desde el primer ciclista cuando est\'a en $A$ volando a una velocidad de \SI{100}{\km\per\hour}, toca la frente del 
 	segundo, vuelve a volar hasta la frente del primero, regresa hasta la del segundo, y contin\'ua as\'{\i} hasta que las 
 	frentes de los ciclistas se chocan y aplastan a la mosca.
 	?`Cu\'antos kil\'ometros ha volado en total la mosca?
@@ -246,16 +239,14 @@ Nobel y Fields).
 \end{problem}
 
 \begin{problem}{28.}
-	Una aguja de 10 cm de longitud se lanza aleatoriamente sobre un papel de rayas con un espaciado de 10 cm entre dos rayas consecutivas. 
+	Una aguja de \SI{10}{\cm} de longitud se lanza aleatoriamente sobre un papel de rayas con un espaciado de \SI{10}{\cm} entre dos rayas consecutivas. 
 	Se repite esto $N$ (un mill\'on) veces. 
 	?`Cu\'antas veces (aproximadamente, salvo un peque\~no error en el porcentaje) la aguja intersecar\'a alguna raya del papel?
 	\begin{figure}
 		\includegraphics{taskbook-12}
 	\end{figure}
-
 	Uno puede realizar este experimento (como lo hice yo cuando ten\'{i}a 10 a\~nos) con $N=100$ en lugar de un mill\'on de lanzamientos.
-	[La respuesta a este problema es sorprendente: $\frac2{\pi}N$. Adem\'as incluso doblando la aguja hasta una longitud $a \cdot 10$
-	cm el n\'umero de intersecciones observadas en $N$ lanzamientos es aproximadamente $\frac{2a}{\pi}N$. 
+	[La respuesta a este problema es sorprendente: $\frac2{\pi}N$. Adem\'as incluso doblando la aguja hasta una longitud $a \cdot \SI{10}{\cm}$ el n\'umero de intersecciones observadas en $N$ lanzamientos es aproximadamente $\frac{2a}{\pi}N$. 
 	El n\'umero $\pi \approx  \frac{355}{113} \approx \frac{22}7$.]
 \end{problem}
 
@@ -306,7 +297,7 @@ Nobel y Fields).
 
 \begin{problem}{33.}
 	?`De cu\'antas formas diferentes se pueden colorear las 6 caras un cubo con seis colores $(1,\dotsc,6)$ [uno por cada cara]
-	de modo que los las formas sean distintos dos a dos (es decir, no se puede pasar de una forma a otra mediante una rotaci\'on)? 
+	de modo que los las formas sean distintos dos a dos (es decir, no se puede pasar de una forma a otra mediante una rotaci\'on)?
 	\begin{figure}
 		\includegraphics{taskbook-17}
 	\end{figure}
@@ -431,17 +422,16 @@ Nobel y Fields).
 			\begin{aligned}[t]
 				&\begin{aligned}[t] n=2, \text{\ \ only\ \ } 1<2, \end{aligned} &&\text{el n\'umero es }1, \\
 				&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=3, \hphantom{\text{\ \ only\ \ }} 1&<3>2 \\ 
-				2&<3>1\end{aligned} \right\}}, && \text{el n\'umero es }2, \\[2pt]
+				2&<3>1\end{aligned} \right\}}, && \text{el n\'umero es }2, \\
 				&\hskip-\nulldelimiterspace\mathord{\left.\begin{aligned} n=4, \hphantom{\text{\ \ only\ \ }} 1&<3>2<4 \\ 
 				1&<4>2<3 \\ 
 				2&<3>1<4 \\ 
 				2&<4>1<3 \\ 
 				3&<4>1<2\end{aligned} \right\}},
-				&&\text{el n\'umero es  }5. \\
+				&&\text{el n\'umero es }5. \\
 			\end{aligned}
 		\end{equation*}
 	\end{note}
-
 	Encontrar el n\'umero de serpientes de longitud 10.
 \end{problem}
 
@@ -452,23 +442,23 @@ Nobel y Fields).
 	\end{equation*}
 	Probar que la serie de Taylor de la tangente es:
 	\begin{equation*}
-	\tan x=1\, \frac{x^1}{1!}+2\, \frac{x^3}{3!}+16\, \frac{x^5}{5!}+\dots=
-	\textstyle\sum\limits_{k=1}^{\infty} s_{2k-1}\, \frac{x^{2k-1}}{(2k-1)!}.
+		\tan x=1\, \frac{x^1}{1!}+2\, \frac{x^3}{3!}+16\, \frac{x^5}{5!}+\dots=
+		\textstyle\sum\limits_{k=1}^{\infty} s_{2k-1}\, \frac{x^{2k-1}}{(2k-1)!}.
 	\end{equation*}
 \end{problem}
 
 \begin{problem}{49.}
 	Encontrar la suma de las series
 	\begin{equation*}
-	1+1\, \frac{x^2}{2!}+5\, \frac{x^4}{4!}+61\, \frac{x^6}{6!}+\dots=
-	\textstyle\sum\limits_{k=0}^{\infty} s_{2k}\,\frac{x^{2k}}{(2k)!}.
+		1+1\, \frac{x^2}{2!}+5\, \frac{x^4}{4!}+61\, \frac{x^6}{6!}+\dots=
+		\textstyle\sum\limits_{k=0}^{\infty} s_{2k}\,\frac{x^{2k}}{(2k)!}.
 	\end{equation*}
 \end{problem}
 
 \begin{problem}{50.}
 	Para $s>1$, probar la identidad
 	\begin{equation*}
-	\textstyle\prod\limits_{p=2}^{\infty} \cfrac{1}{1-\cfrac{1}{p^s}}=\sum\limits_{n=1}^{\infty} \frac{1}{n^s}
+	\textstyle\prod\limits_{p=2}^{\infty} \frac{1}{1-\frac{1}{p^s}}=\textstyle\sum\limits_{n=1}^{\infty} \frac{1}{n^s}
 	\end{equation*} 
 	(el producto afecta a todos los n\'umeros primos $p$, y el sumatorio a los n\'umeros naturales ~$n$).
 \end{problem}
@@ -478,40 +468,35 @@ Nobel y Fields).
 	\begin{equation*}
 	1+ \frac{1}{4}+ \frac{1}{9}+\dots=\textstyle\sum\limits_{n=1}^{\infty} \frac{1}{n^2}
 	\end{equation*}
-	(probar que es $\pi^2/6$, es decir, aproximadamente $3/2$). 
+	(probar que es $\nicefrac{\pi^2}{6}$, es decir, aproximadamente $\nicefrac{3}{2}$). 
 \end{problem}
 
 \begin{problem}{52.}
-	Encontrar la probabilidad de una fracci\'on $p/q$ sea irreducible (se define de la siguiente forma:
-	en el disco $p^2+q^2 \leqslant R^2$, se cuenta el n\'umero $N$ de vectores con dos componentes enteras $p$ y $q$ que no tengan divisores comunes mayores que 1, despu\'es de hacer \'esto, la probabilidad de que sea irreducible es el l\'{\i}mite del cociente $N(R)/M(R)$, donde $M(R)$ es el n\'umero de puntos enteros en el disco $(M \sim \pi R^2)$).
+	Encontrar la probabilidad de una fracci\'on $\nicefrac{p}{q}$ sea irreducible (se define de la siguiente forma:
+	en el disco $p^2+q^2 \leqslant R^2$, se cuenta el n\'umero $N$ de vectores con dos componentes enteras $p$ y $q$ que no tengan divisores comunes mayores que 1, despu\'es de hacer \'esto, la probabilidad de que sea irreducible es el l\'{\i}mite del cociente $\nicefrac{N(R)}{M(R)}$, donde $M(R)$ es el n\'umero de puntos enteros en el disco $(M \sim \pi R^2)$).
 	\begin{figure}
-	\centering
-	\includegraphics{taskbook-36}\\{\ } \\
-	$M(5)=81$, $N(5)=44$, $N/M = 44/81$
+		\includegraphics{taskbook-36}\\
+		\footnotesize $M(5)=81$, $N(5)=44$, $\nicefrac{N}{M} = \nicefrac{44}{81}$
 	\end{figure}
 \end{problem}
 
 \begin{problem}{53.}
-	Para la secuencia de los n\'umeros de Fibonacci $a_n$ del problema 43, encontrar el l\'{\i}mite del cociente 
-	$a_{n+1}/a_n$ cuando $n$ tiende a infinito:\vspace{2\jot}
+	Para la secuencia de los n\'umeros de Fibonacci $a_n$ del problema 43, encontrar el l\'{\i}mite del cociente $\nicefrac{a_{n+1}}{a_n}$ cuando $n$ tiende a infinito:
 	\begin{equation*}
-	\frac{a_{n+1}}{a_n}=2,\ \frac 32,\ \frac53, \ \frac85, \ \frac{13}8,
-	\ \frac{34}{21}.
-	\vspace{\jot}
-	\end{equation*} 
-
-	%\noindent
-	\textsc{Respuesta:} \enquote{la raz\'on aurea o n\'umero aureo},
-	$\frac{\sqrt{5}+1}{2\vphantom)} \approx 1{,}618$. [Es la raz\'on de los lados de una tarjeta que es similar a la tarjeta resultante de quitar el cuadrado de lado el menor lado de la tarjeta,
-	$\frac{AB}{BC}=\frac{PC}{CD\vphantom)}$.] ?`Cu\'anto vale la raz\'on aurea relativa a un pent\'agono regular y una estrella de 5 puntas? 
-
-	\begin{figure}
-		\includegraphics{taskbook-37}
-	\end{figure}
+		\frac{a_{n+1}}{a_n}=2,\ \frac 32,\ \frac53, \ \frac85, \ \frac{13}8,
+		\ \frac{34}{21}.
+	\end{equation*}
+	\begin{note}{Respuesta:}
+		\enquote{la raz\'on aurea o n\'umero aureo},
+		$\frac{\sqrt{5}+1}{2} \approx 1{,}618$. (Es la raz\'on de los lados de una tarjeta que es similar a la tarjeta resultante de quitar el cuadrado de lado el menor lado de la tarjeta, $\frac{AB}{BC}=\frac{PC}{CD}$.$\big)$ ?`Cu\'anto vale la raz\'on aurea relativa a un pent\'agono regular y una estrella de 5 puntas?
+		\begin{figure}
+			\includegraphics{taskbook-37}
+		\end{figure}
+	\end{note}
 \end{problem}
 
 \begin{problem}{54.}
-	Calcular la fracci\'on cont\'{\i}nua infinita
+	Calcular la fracci\'on cont\'{\i}nua infinita\todo{put $a_{2k}=1$ and $a_{2k+1}$ into the text and remove the [box]!}{}
 	\begin{align*}
 	1+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\cfrac{1}{1+\cfrac{1}{2+\ldots}}}}}=
 	a_0+\cfrac{1}{a_1+\cfrac{1}{a_2+\cfrac{1}{a_3+\dots}}} \qquad
@@ -520,14 +505,9 @@ Nobel y Fields).
 	{\left[\begin{aligned} &a_{2k}=1 \\[-\jot] &a_{2k+1}
 	=2 \end{aligned}\right]} }
 	\end{align*}
-
-	\medskip
-
-	\noindent (es decir, el l\'{\i}mite de las fracciones
+	(es decir, el l\'{\i}mite de las fracciones
 	\begin{equation*}
-	a_0+\cfrac{1}{a_1+\cfrac{1}{a_2+{\atop{\ddots \atop {}} + \cfrac{1}{a_n}}
-	} 
-	}
+		a_0+\cfrac{1}{a_1+\cfrac{1}{a_2+{\atop{\ddots \atop {}} + \cfrac{1}{a_n}}}}
 	\end{equation*}
 	cuando $n \to \infty$).
 \end{problem}
@@ -535,9 +515,9 @@ Nobel y Fields).
 \begin{problem}{55.}
 	Encontrar los polinomios
 	\begin{equation*}
-	y=\cos 3 (\arccos x),\  y=\cos 4 (\arccos x),\ 
-	y=\cos n (\arccos x),
-	\end{equation*} 
+		y=\cos 3 (\arccos x),\ y=\cos 4 (\arccos x),\ 
+		y=\cos n (\arccos x),
+	\end{equation*}
 	para $|x| \leqslant 1$. 
 \end{problem}
 
@@ -548,66 +528,66 @@ Nobel y Fields).
 \begin{problem}{57.}
 	En el plano $(x,y)$, dibujar las curvas definidas param\'etricamente por: 
 	\begin{equation*}
-	\{x=\cos 2t, y=\sin 3t\},\quad 
-	\{x=t^3-3t, y=t^4-2t^2\}.
+		\{x=\cos 2t, y=\sin 3t\},\quad 
+		\{x=t^3-3t, y=t^4-2t^2\}.
 	\end{equation*}
 \end{problem}
 
 \begin{problem}{58.}
-	Calcular (con una cota de error menor del 10\%)
-	\begin{equation*}
-	\int\limits_0^{2\pi} \sin^{100} x\,dx.
-	\end{equation*}
+	Calcular (con una cota de error menor del 10\%) $\int_0^{2\pi} \sin^{100} x\,dx$.
 \end{problem}
 
 \begin{problem}{59.}
-	Calcular (con una cota de error menor del 10\%)
-	\begin{equation*}
-	\int\limits_1^{10} x^x\,dx.
-	\end{equation*}
+	Calcular (con una cota de error menor del 10\%) $\int_1^{10} x^x\,dx$.
 \end{problem}
 
 \begin{problem}{60.}
 	Encontrar el \'area de un tri\'angulo cuyos \'angulos $(\alpha, \beta, \gamma)$ est\'an en una esfera de radio 1,
 	y cuyos lados son circunferencias grandes (secciones de una esfera con un plano que pasa por el centro de la esfera).
 
-	\medskip
-	%\noindent
-	\textsc{Respuesta:} $S=\alpha+\beta+\gamma-\pi$ (por ejemplo, en un tri\'angulo con tres \'angulos rectos, $S=\pi/2$, es decir, la octava parte del \'area total de la esfera).
-	\begin{figure}
-		\includegraphics{taskbook-44}\hskip2cm \includegraphics{taskbook-45}
-	\end{figure}
+	\begin{note}{Respuesta:} $S=\alpha+\beta+\gamma-\pi$ (por ejemplo, en un tri\'angulo con tres \'angulos rectos, $S=\nicefrac{\pi}{2}$, es decir, la octava parte del \'area total de la esfera).
+		\begin{figure}
+			\null\hfill
+			\includegraphics{taskbook-44}
+			\hfill
+			\includegraphics{taskbook-45}
+			\hfill\null
+		\end{figure}
+	\end{note}
 \end{problem}
 
 \begin{problem}{61.}
 	Un c\'{\i}rculo de radio $r$ rueda (sin deslizarse) por el interior de un c\'{\i}rculo de radio 1.
 	Dibujar la trayectoria completa de un punto del c\'{\i}rculo que se desplaza (esta trayectoria se denomina hipocicloide) 
-	para $r=1/3$, para $r=1/4$, para $r=1/n$, y para $r=1/2$.
+	para $r=\nicefrac{1}{3}$, para $r=\nicefrac{1}{4}$, para $r=\nicefrac{1}{n}$, y para $r=\nicefrac{1}{2}$.
 \end{problem}
 
 \begin{problem}{62.}
 	En una clase de $n$ alumnos, estimar la probabilidad de haya dos que cumplan a\~nos el mismo d\'{\i}a. ?`Es alta o baja?
 
-	%\noindent
-	\medskip
-	\textsc{Respuesta:} (muy) alta si el n\'umero de alumnos es (bastante) mayor que $n_0$,
-	(muy) baja si es (bastante) m\'as peque\~no que $n_0$, y hay que buscar qu\'e es realmente $n_0$ (cuando la probabilidad es $p \approx 1/2$).
+	\begin{note}{Respuesta:}\todo{Compare content with German version}{}
+		(muy) alta si el n\'umero de alumnos es (bastante) mayor que $n_0$, (muy) baja si es (bastante) m\'as peque\~no que $n_0$, y hay que buscar qu\'e es realmente $n_0$ (cuando la probabilidad es $p \approx \nicefrac{1}{2}$).
+	\end{note}
 \end{problem}
 
 \begin{problem}{63.}
-	La ley de Snell (o Snellius) establece que el \'angulo $\alpha$ que forma un rayo de luz con el vector normal a las capas de un medio estratificado satisface la ecuaci\'on $n(y) \sin \alpha=\text{const}$,
+	La ley de Snell (o Snellius) establece que el \'angulo $\alpha$ que forma un rayo de luz con el vector normal a las capas de un medio estratificado satisface la ecuaci\'on
+	\begin{equation*}
+		n(y) \sin \alpha=\text{const},
+	\end{equation*}
 	donde $n(y)$ es el \'{\i}ndice de refracci\'on de la capa a una altura $y$ (la cantidad $n$ es 
 	inversamente proporcional a la velocidad 
-	de la luz en este medio. La velocidad en el vac\'{\i}o vale 1, y en el agua $n=4/3$).
+	de la luz en este medio. La velocidad en el vac\'{\i}o vale 1, y en el agua $n=\nicefrac{4}{3}$).
 	\begin{figure}
-		\includegraphics{taskbook-47}\hskip2cm
-	\includegraphics{taskbook-471}
+		\null\hfill
+		\includegraphics{taskbook-47}
+		\hfill
+		\includegraphics{taskbook-471}
+		\hfill\null
 	\end{figure}
 
-	%\noindent 
-	Dibujar las trayectorias de un rayo en el medio \enquote{aire en un desierto}, donde el \'{\i}ndice $n(y)$ tiene un m\'aximo 
-	a una determinada altura
-	(una soluci\'on a este problema explica los espejismos en un desierto a aquellos que entiendan c\'omo se relaccionan con las im\'agenes las trayectorias de los rayos que salen de los objetos).
+	Dibujar las trayectorias de un rayo en el medio \enquote{aire en un desierto}, donde el \'{\i}ndice $n(y)$ tiene un m\'aximo a una determinada altura
+ (una soluci\'on a este problema explica los espejismos en un desierto a aquellos que entiendan c\'omo se relaccionan con las im\'agenes las trayectorias de los rayos que salen de los objetos).
 \end{problem}
 
 \begin{problem}{64.}
@@ -617,118 +597,107 @@ Nobel y Fields).
 		\includegraphics{taskbook-48} 
 	\end{figure}
 
-	\textsc{Pista:} La respuesta para los tri\'angulos no acut\'angulos no es tan bonita como la de los acut\'angulos.
+	\begin{note}{Pista:}
+		La respuesta para los tri\'angulos no acut\'angulos no es tan bonita como la de los acut\'angulos.
+	\end{note}
 \end{problem}
 
 \begin{problem}{65.}
-	Calcular el valor medio de la funci\'on $1/r$ (donde
-	$r^2\,=x^2\,+y^2+z^2$, 
-	\newline
-	s es la distancia al origen) en la esfera de radio 
+	Calcular el valor medio de la funci\'on $\nicefrac{1}{r}$ (donde
+	$r^2=x^2+y^2+z^2$, s es la distancia al origen) en la esfera de radio 
 	$R$ centrada en el punto $(X,Y,Z)$.
 
-	%\noindent
-	\medskip
-	\textsc{Pista:} El problema est\'a relacionado con la Ley de Gravitaci\'on de Newton y la Ley de Coulomb del campo el\'ectrico.
-	En la versi\'on bidimensional del problema, hay que reemplazar la funci\'on por $\ln r$, y la esfera por el c\'{\i}rculo.
+	\begin{note}{Pista:}
+		El problema est\'a relacionado con la Ley de Gravitaci\'on de Newton y la Ley de Coulomb del campo el\'ectrico. En la versi\'on bidimensional del problema, hay que reemplazar la funci\'on por $\ln r$, y la esfera por el c\'{\i}rculo.
+	\end{note}
 \end{problem}
 
 \begin{problem}{66.}
-	Como $2^{10}=1024 \approx 10^3$, entonces
-	$\log_{10} 2 \approx 0{.}3$.
-
-	Estimar cu\'anto difieren y calcular, con tres decimales, $\log_{10} 2$. 
+	Como $2^{10}=1024 \approx 10^3$, entonces $\log_{10} 2 \approx 0,3$. Estimar cu\'anto difieren y calcular, con tres decimales, $\log_{10} 2$. 
 \end{problem}
 
+\begin{sloppypar}
 \begin{problem}{67.}
-	Hallar $\log_{10} 4$, $\log_{10} 8$,
-	$\log_{10} 5$, $\log_{10} 50$, $\log_{10} 32$, $\log_{10} 128$,
-	$\log_{10} 125$, $\log_{10} 64$ con la misma precisi\'on.
+	Hallar $\log_{10} 4$, $\log_{10} 8$, $\log_{10} 5$, $\log_{10} 50$, $\log_{10} 32$, $\log_{10} 128$, $\log_{10} 125$, $\log_{10} 64$ con la misma precisi\'on.
 \end{problem}
+\end{sloppypar}
 
 \begin{problem}{68.}
 	Usando que $7^2 \approx 50$, encontrar un valor aproximado de $\log_{10} 7$.
 \end{problem}
 
+\begin{sloppypar}
 \begin{problem}{69.}
 	Sabiendo que $\log_{10} 64$ y que $\log_{10} 7$, calcular $\log_{10} 9$, $\log_{10} 3$, $\log_{10} 27$, $\log_{10} 6$, $\log_{10} 12$.
 \end{problem}
+\end{sloppypar}
 
 \begin{problem}{70.}
 	Sabiendo que $\ln (1+x) \approx x$ ($\ln$ es $\log_e$), hallar $\log_{10} e$ y
 	$\ln 10$ usando la relaci\'on \footnote{El n\'umero de Euler $e = 2{,}71828\dots$ se define como el l\'{\i}mite de la sucesi\'on
 	$\left(1+\frac1n\right)^n$ para $n\to \infty$, y es igual a la suma de la serie  
-	$1+\frac 1{1!} +\frac 1{2!}+\frac 1{3!}+\dots$. Tambi\'en se puede definir mediante la f\'ormula citada como
-	$\ln (1+x)$: $\lim\limits_{x\to 0}\frac{\ln(1+x)}{x} = 1$.}\vspace{-\jot}
+	$1+\frac 1{1!} +\frac 1{2!}+\frac 1{3!}+\dotsb$. Tambi\'en se puede definir mediante la f\'ormula citada como
+	$\ln (1+x)$: $\lim\limits_{x\to 0}\frac{\ln(1+x)}{x} = 1$.}
 	%
 	\begin{equation*}
-	\log_{10} a=\frac{\ln a}{\ln 10}
+		\log_{10} a=\frac{\ln a}{\ln 10}
 	\end{equation*} 
-	y para los valores de $\log_{10} a$ calculados previamente (por ejemplo, para $a=128/125$, $1024/1000$
-	y as\'{\i} sucesivamente).
+	y para los valores de $\log_{10} a$ calculados previamente (por ejemplo, para $a=\nicefrac{128}{125}$, $\nicefrac{1024}{1000}$ y as\'{\i} sucesivamente).
 
 	%\noindent
-	[Las soluciones de los problemas 65--69 conducen, despu\'es de media hora, a una tabla de logaritmos con cuatro d\'{\i}gitos de cualquier n\'umero usando productos de n\'umeros que ya conocemos como datos b\'asicos y la f\'ormula  
-	\vspace{-2\jot}
+	[Las soluciones de los problemas 65--69 conducen, despu\'es de media hora, a una tabla de logaritmos con cuatro d\'{\i}gitos de cualquier n\'umero usando productos de n\'umeros que ya conocemos como datos b\'asicos y la f\'ormula
 	\begin{equation*}
-	\ln (1+x) \approx x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\dots
+		\ln (1+x) \approx x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4}+\dotsb
 	\end{equation*}
-	para realizar correcciones.] $\langle$De este modo, Newton construy\'o una tabla de logaritmos con 40 d\'{\i}gitos.%\hskip0pt
-	$\rangle$.
+	para realizar correcciones.] (De este modo, Newton construy\'o una tabla de logaritmos con 40 d\'{\i}gitos.)
 \end{problem}
 
 \begin{problem}{71.}
 	Se considera la sucesi\'on de potencias de dos: $1$, $2$, $4$, $8$, $16$, $32$, $64$,
-	$128$, $256$, $512$, $1024$, $2048, \dots$ . Entre los primeros doce n\'umeros, hay cuatro cuya expresi\'on decimal empieza por 1, y ninguno que comienza por 7.
+	$128$, $256$, $512$, $1024$, $2048, \dotsc$ Entre los primeros doce n\'umeros, hay cuatro cuya expresi\'on decimal empieza por 1, y ninguno que comienza por 7.
 
-	%\noindent 
+	
 	Probar que en el l\'{\i}mite $n \to \infty$ el primer d\'{\i}gito de los n	'umeros $2^m$,
 	$0\leqslant m \leqslant n$ es, con una determinada frecuencia:
-	$p_1 \approx 30\%$, $p_2 \approx 18\%$,  $\dots$, $p_9 \approx 4\%$.
+	$p_1 \approx 30\%$, $p_2 \approx 18\%$,  $\dotsc$, $p_9 \approx 4\%$.
 \end{problem}
 
 \begin{problem}{72.}
-	Verificar el comportamiento del primer d\'{\i}gito para las potencias de tres: $1$,
-	$3$, $9$, $2$, $8$, $2$, $7, \dots$ . Probar que, en el l\'{\i}mite, tambi\'en aqu\'{\i} se obtienen unas ciertas frecuencias y, adem\'as, son las mismas que para las potencias de dos.
-	Encontrar la f\'ormula exacta para $p_1, \dots, p_9$.
+	Verificar el comportamiento del primer d\'{\i}gito para las potencias de tres: $1$, $3$, $9$, $2$, $8$, $2$, $7, \dotsc$ Probar que, en el l\'{\i}mite, tambi\'en aqu\'{\i} se obtienen unas ciertas frecuencias y, adem\'as, son las mismas que para las potencias de dos.
+	Encontrar la f\'ormula exacta para $p_1, \dotsc, p_9$.
+	\begin{note}{Pista:}
+		El primer d\'igito del n\'umero $x$ queda determinado por la parte decimal del n\'umero  $\log_{10} x$, por lo tanto hay que considerar la sucesi\'on de las partes decimales de los n\'umeros $m \alpha$, donde $\alpha=\log_{10} 2$.
+	\end{note}
 
-	%\noindent
-	\medskip
-	\textsc{Pista:} El primer d\'igito del n\'umero $x$ queda determinado por la parte decimal del n\'umero  $\log_{10} x$, por lo tanto hay que considerar la sucesi\'on de las partes decimales de
-	los n\'umeros $m \alpha$, donde $\alpha=\log_{10} 2$.
-
-	%\noindent 
-	Probar que estas partes decimales se distribuyen uniformemente en un intervalo de 0 a~1: entre los $n$ n\'umeros 
-	decimales $m \alpha$, $0 \leqslant m<n$,
-	un subintervalo $A$ contendr\'a una cantidad ~$k_n (A)$ de ellos de tal forma que, para $n \to \infty$,
-	$\lim (k_n (A)/n)={}$(la longitud del subintervalo~$A$).
+	Probar que estas partes decimales se distribuyen uniformemente en un intervalo de $0$ a~$1$: entre los $n$ n\'umeros decimales $m \alpha$, $0 \leqslant m<n$,
+	un subintervalo $A$ contendr\'a una cantidad ~$k_n (A)$ de ellos de tal forma que, para $n \to \infty$, $\lim (k_n (A)/n)=(\text{la longitud del subintervalo }A)$.
 \end{problem}
 
 \begin{problem}{73.}
 	Sea $g\colon M \to M$ la parte regular de un dominio acotado $M$ sobre si mismo uno-a-uno y que preserva las \'areas (vol\'umenes en el caso multidimensional) de los dominios.
 
-	Probar que en todo entorno $U$ de un punto $M$ cualquiera y para todo $N$ existe un punto $x$
-	tal que $g^T x$ tambi\'en est\'a en $U$ para un cierto entero $T>N$ (\enquote{el teorema de recurrencia}).
+	Probar que en todo entorno $U$ de un punto $M$ cualquiera y para todo $N$ existe un punto $x$ tal que $g^T (x)$ tambi\'en est\'a en $U$ para un cierto entero $T>N$ (\enquote{el teorema de recurrencia}).
 \end{problem}
 
 \begin{problem}{74.}
-	Sea $M$ la superficie del toro (con coordenadas $\alpha$ (mod $2\pi$), $\beta$ (mod $2\pi$)), 
-	y $g(\alpha, \beta)=(\alpha+1, \beta+ \sqrt{2})$ (mod $2\pi$). Probar que la sucesi\'on de puntos
-	$\{g^T (x)\}$, $T=1, 2, \dots$, es siempre densa en el toro.
+	Sea $M$ la superficie del toro (con coordenadas $\alpha \pmod{2\pi}$, $\beta\pmod{2\pi}$), y
+	\begin{equation*}
+		g(\alpha, \beta)=(\alpha+1, \beta+ \sqrt{2}) \pmod{2\pi}.
+	\end{equation*}
+	Probar que la sucesi\'on de puntos $\{g^T (x)\}$, $T=1, 2, \dotsc$, es siempre densa en el toro.
 \end{problem}
 
 \begin{problem}{75.}
 	Con la notaci\'on del problema  74, sea
 	\begin{equation*}
-	g(\alpha, \beta)=(2\alpha+\beta,\alpha+\beta) \pmod {2\pi}.
-	\end{equation*} 
+		f(\alpha, \beta)=(2\alpha+\beta,\alpha+\beta) \pmod{2\pi}.
+	\end{equation*}
 	Probar que existe un subconjunto denso del toro que consiste en los puntos peri\'odicos $x$ (es decir, los puntos tales que 
-	$g^{T (x)} x=x$ para un cierto entero $T>0$).
+	$f^{T (x)} x=x$ para un cierto entero $T>0$).
 \end{problem}
 
-\begin{problem}{76.}
-	Con la notaci\'on del problema 74 probar que, para casi todo punto $x$ del toro,
-	la sucesi\'on de puntos $\{g^T (x)\}$, $T=1, 2, \dots$, es densa en el toro
+\begin{problem}{76.}\todo{$f$ or $g$? Compare with German and English version}{}
+	Con la notaci\'on del problema 74 probar que, para casi todo punto $x$ del toro, la sucesi\'on de puntos $\{f^T (x)\}$, $T=1, 2, \dots$, es densa en el toro
 	(los puntos $x$ que no satisfacen esta propiedad forman un conjunto de medida nula).
 \end{problem}
 
@@ -741,46 +710,38 @@ Nobel y Fields).
 	(por ejemplo, para un dominio de Jordan medible $A$ de medida $\operatorname{med} A$).
 \end{problem}
 
-\ 
+\vfill
 
-\  
+\begin{note}{Nota sobre el problema 13.}
+	Con este problema he intentado ilustrar la diferencia entre como abordan las tareas los matem\'aticos y los f\'{\i}sicos, en mi papel de invitado en la revista \enquote{Physics -- Uspekhi}  durante la Navidad del a\~no 2000. El \'exito sobrepas\'o mis expectativas: como los editores, a diferencia de los ni\~nos de preescolar en quienes yo hab\'{\i}a basado mi experiencia, no lograron resolver el problema, lo modificaron de la siguiente manera para encontrar mi respuesta de \SI{4}{\mm}: en lugar de \enquote{desde la primera p\'agina del volumen 1 hasta la \'ultima del volumen 2},  escribieron \enquote{desde la {\em \'ultima\/} p\'agina del volumen 1 hasta la {\em primera\/} p\'agina del volumen 2}.
 
-\ 
-
-\textsc{Nota sobre el problema 13.} Con este problema he intentado ilustrar la diferencia entre como abordan las tareas los matem\'aticos y los f\'{\i}sicos, en mi papel de invitado en la revista \enquote{Physics -- Uspekhi}  durante la Navidad del a\~no 2000. El \'exito sobrepas\'o mis expectativas: como los editores, a diferencia de los ni\~nos de preescolar en quienes yo hab\'{\i}a basado mi experiencia, no lograron resolver el problema, lo modificaron de la siguiente manera para encontrar mi respuesta de 4mm: en lugar de \enquote{desde la primera p\'agina del volumen 1 hasta la \'ultima del volumen 2},  escribieron \enquote{desde la {\em \'ultima\/} p\'agina del volumen 1 hasta la {\em primera\/} p\'agina del volumen 2}.
-
-Esta historia real es tan incre\'{\i}ble que he decidido inclu\'{\i}rla aqu\'{\i}: la prueba de esto es la versi\'on que publicaron los editores en la revista.  
-
+	Esta historia real es tan incre\'{\i}ble que he decidido inclu\'{\i}rla aqu\'{\i}: la prueba de esto es la versi\'on que publicaron los editores en la revista.  
+\end{note}
 \clearpage
-
-{%\em
+\null\vfill
 \noindent
-Traducido por \\
-Victor Goryunov y Sabir Gusein-Zade \\
-de la versi\'on original en ruso: \\
-Mosc\'u, MCCME, 2004 \\
-ISBN 5-94057-183-2\\
-\\
 Traducci\'on ruso - ingl\'es:\\
-Victor Goryunov y Sabir Gusein-Zade\\
+\null\quad Victor Goryunov y Sabir Gusein-Zade\\
 \\
 Traducci\'on ingl\'es - espa\~{n}ol:\\
-Ana Isabel P\'erez Mart\'in\\
-Valladolid, RSME-UVA, 2013\\
-Con apoyo de la Real Sociedad Matem\'atica Espa\~{n}ola (www.rsme.es)\\
+\null\quad Ana Isabel P\'erez Mart\'in\\
+\null\quad Valladolid, RSME-UVA, 2013\\
+\null\quad Con apoyo de la Real Sociedad Matem\'atica Espa\~{n}ola (www.rsme.es)\\
+\\
+Design und Layout:\todo{translate}{}\\
+\null\quad Konrad Renner und Christian Stussak\\
 \\
 Del original ruso:\\
-\textrussian{В. И. Арнольд: Задачи для детей от 5 до 15 лет}\\
-Moskau, MCCME, 2004\\
-ISBN 5-94057-183-2\\
+\null\quad \textrussian{В. И. Арнольд: Задачи для детей от 5 до 15 лет}\\
+\null\quad Mosc\'u, MCCME, 2004\\
+\null\quad ISBN 5-94057-183-2\\
 \\
 \\
 Cr\'editos de la imagen de cubierta:\\
-Archivos del 
-Mathematisches \\Forschungsinstitut Oberwolfach.\\
+\null\quad Archivos del Mathematisches Forschungsinstitut Oberwolfach.\\
 \\
-Este libro est\'a disponible por la licencia CC BY-NC-SA 3.0 en la plataforma IMAGINARY: www.imaginary.org/background-materials.\\
+Versión:\\
+\null\quad \today\\
 \\
-Versión del \today
-}
+Este libro est\'a disponible por la licencia CC BY-NC-SA 3.0 en la plataforma IMAGINARY: \href{http://www.imaginary.org/background-materials}{www.imaginary.org/background-materials}.
 \end{document}
