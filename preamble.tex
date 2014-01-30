@@ -24,7 +24,7 @@
 \usepackage{etoolbox}
 \usepackage{microtype,ellipsis}
 
-\usepackage{polyglossia}
+\usepackage{polyglossia,iflang}
 \setotherlanguage{russian} % the name of the original Russian version at the end of this book is written using Cyrillic letters
 
 \usepackage{textcomp}
@@ -38,13 +38,12 @@
 
 \usepackage{transparent}
 \usepackage{csquotes}
-\DeclareQuoteStyle{vietnamese}% verified
+\DeclareQuoteStyle{vietnamese}
   {\textquotedblleft}
   {\textquotedblright}
   [0.05em]
   {\textquoteleft}
   {\textquoteright}
-
 
 \usepackage{siunitx}
 \sisetup{per-mode=fraction,fraction-function=\nicefrac}
@@ -59,7 +58,7 @@
 % but Arnold also uses special numbering for some problems. Therefore, I kept the manual numbering.
 \newenvironment{problem}[1]{\paragraph*{#1}}{}
 
-\newenvironment{note}[1]{\par\noindent\textsc{\MakeLowercase{#1}} }{\par}
+\newenvironment{note}[1]{\par\noindent\IfLanguageName{vietnamese}{\textit{#1}}{\textsc{\MakeLowercase{#1}}} }{\par}
 
 \makeatletter
 
