@@ -31,10 +31,13 @@ We encourage you to add translations for new languages and to improve existing o
 
 ### Adding a translation
 
-First create a new file called `5to15_xx_XX.tex`, where `xx_XX` is substituted according to the above specification. You should do so by copying one of the other translations, e.g. `5to15_en_GB.tex`. Since we are using the Computer Modern Unicode fonts in conjunction with XeLaTeX, you should be able to write down most of the UTF-8 characters directly without using special LaTeX notation, i.e. write `ü` instead of `\"u`. The same is true for Cyrillic, Greek, ... letters. Nevertheless, there may be other font/encoding problems we are currently not aware of.
+First create a new file called `5to15_xx_XX.tex`, where `xx_XX` is substituted according to the above specification. You should do so by copying one of the other translations, e.g. `5to15_en_GB.tex`. Since we are using the Computer Modern Unicode fonts in conjunction with XeLaTeX, you should be able to write down most of the UTF-8 characters directly without using special LaTeX notation, i.e. write `ü` instead of `\"u`. The same is true for Cyrillic, Greek, ... letters. Nevertheless, there may be other font/encoding problems we are currently not aware of. Note that your TeX editor needs to capable of editing UTF-8 documents as well. It may be necessary to set the UTF-8 encoding (without byte order mark) when loading and or saving the file.
 
 One of the first lines of your new (copied) file contains the definition of the main language of the file. You need to adjust `\setdefaultlanguage[variant=british]{english}` (in case you did copy `5to15_en_GB.tex`) to reflect the new language. See the list of supported languages in the [polyglossia](http://www.ctan.org/pkg/polyglossia) package.
 
+Now you are ready to translate the document. Please keep your document structure and LaTeX source (math/figures) as close as possible to the other translations. We usually use a visual diff and merge tool to have the original and the new translation side by side. Using e.g. [meld](http://meldmerge.org/) it looks as follows:
+
+TODO: image
 
 ### Improving existing translations
 
