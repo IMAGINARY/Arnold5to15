@@ -1,7 +1,7 @@
 V. I. Arnold: Problems for children from 5 to 15
 ================================================
 
-This repository contains the LaTeX sources of the translations of Arnolds famous book "Problems for children from 5 to 15" derived from the Russian original http://www.mccme.ru/free-books/izdano/2004/VIA-taskbook.pdf.
+This repository contains the LaTeX sources of the translations of Arnold's famous book "Problems for children from 5 to 15" derived from the Russian original http://www.mccme.ru/free-books/izdano/2004/VIA-taskbook.pdf.
 
 ![V. I. Arnold](https://raw.github.com/IMAGINARY/Arnold5to15/master/resources/photo-arnold_small.jpg "V. I. Arnold")
 
@@ -14,9 +14,9 @@ Since the book is available in serveral languages, we decided to use the XeLaTeX
 
 You can use the command line
 ```
-xelatex 5to15_xx_XX.tex 
+xelatex 5to15_xx_YY.tex 
 ```
-where `xx` is the [language code](http://www.langtag.net/registries/lsr-language.txt) and `XX` is the [region code](http://www.langtag.net/registries/lsr-region.txt) to create `5to15_xx_XX.pdf`. Usually, you can also configure the TeX editor of your choice to use XeLaTeX instead of pdfLaTeX.
+where `xx` is the [language code](http://www.langtag.net/registries/lsr-language.txt) and `YY` is the [region code](http://www.langtag.net/registries/lsr-region.txt) to create `5to15_xx_YY.pdf`. Usually, you can also configure the TeX editor of your choice to use XeLaTeX instead of pdfLaTeX.
 
 Note that the documents rely on a number of recent packages. Therefore:
 
@@ -31,7 +31,7 @@ We encourage you to add translations for new languages and to improve existing o
 
 ### Adding a translation
 
-First create a new file called `5to15_xx_XX.tex`, where `xx_XX` is substituted according to the above specification. You should do so by copying one of the other translations, e.g. `5to15_en_GB.tex`. Since we are using the Computer Modern Unicode fonts in conjunction with XeLaTeX, you should be able to write down most of the UTF-8 characters directly without using special LaTeX notation, i.e. write `ü` instead of `\"u`. The same is true for Cyrillic, Greek, ... letters. Nevertheless, there may be other font/encoding problems we are currently not aware of. Note that your TeX editor needs to capable of editing UTF-8 documents as well. It may be necessary to set the UTF-8 encoding (without byte order mark) when loading and or saving the file.
+First create a new file called `5to15_xx_YY.tex`, where `xx_YY` is substituted according to the above specification. You should do so by copying one of the other translations, e.g. `5to15_en_GB.tex`. Since we are using the Computer Modern Unicode fonts in conjunction with XeLaTeX, you should be able to write down most of the UTF-8 characters directly without using special LaTeX notation, i.e. write `ü` instead of `\"u`. The same is true for Cyrillic, Greek, ... letters. Nevertheless, there may be other font/encoding problems we are currently not aware of. Note that your TeX editor needs to be capable of editing UTF-8 documents as well. It may be necessary to set the UTF-8 encoding (without byte order mark) when loading and/or saving the file.
 
 One of the first lines of your new (copied) file contains the definition of the main language of the file. You need to adjust `\setdefaultlanguage[variant=british]{english}` (in case you did copy `5to15_en_GB.tex`) to reflect the new language. See the list of supported languages in the [polyglossia](http://www.ctan.org/pkg/polyglossia) package.
 
@@ -54,7 +54,7 @@ Please also add your name(s) to the list of contributors at the end of the docum
 
 ### Improving existing translations
 
-You found a typo? You think, the translation of one of Arnolds problems is wrong or you can improve it? You want to rebuild one (or all) of the graphics in LaTeX (e.g. TikZ)? [Report the issue on GitHub](https://github.com/IMAGINARY/Arnold5to15/issues/new) or [contact us directly](http://http//www.imaginary.org/contact).
+You found a typo? You think, the translation of one of Arnold's problems is wrong or you can improve it? You want to rebuild one (or all) of the graphics in LaTeX (e.g. TikZ)? [Report the issue on GitHub](https://github.com/IMAGINARY/Arnold5to15/issues/new) or [contact us directly](http://http//www.imaginary.org/contact).
 
 ### Using git and GitHub
 
