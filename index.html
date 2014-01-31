@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>V. I. Arnold: Problems for children from 5 to 15</h1>
-        <h2></h2>
+        <h2>Help translating this fantastic book into your (favourite) language!</h2>
         <a href="https://github.com/IMAGINARY/Arnold5to15" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -55,7 +55,7 @@
 <h2>
 <a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
-<p>We encourage you to add translations for new languages and to improve existing ones. </p>
+<p>We encourage you to add translations for new languages and to improve existing ones. Note that your contributions will be published under the above license.</p>
 
 <h3>
 <a name="adding-a-translation" class="anchor" href="#adding-a-translation"><span class="octicon octicon-link"></span></a>Adding a translation</h3>
@@ -64,12 +64,28 @@
 
 <p>One of the first lines of your new (copied) file contains the definition of the main language of the file. You need to adjust <code>\setdefaultlanguage[variant=british]{english}</code> (in case you did copy <code>5to15_en_GB.tex</code>) to reflect the new language. See the list of supported languages in the <a href="http://www.ctan.org/pkg/polyglossia">polyglossia</a> package.</p>
 
-<p>Now you are ready to translate the document. Please keep your document structure and LaTeX source (math/figures) as close as possible to the other translations. We usually use a visual diff and merge tool to have the original and the new translation side by side. Using e.g. <a href="http://meldmerge.org/">meld</a> it looks as follows:</p>
+<p>Now you are ready to translate the document. Please keep your document structure and LaTeX source (math/figures) as close as possible to the other translations. We usually use a visual diff and merge tool to have the original and the new translation side by side. Using e.g. <a href="http://meldmerge.org/">meld</a> it looks like this:</p>
 
-<p>TODO: image</p>
+<p><img src="https://raw.github.com/IMAGINARY/Arnold5to15/gh-pages/images/meld.png" alt="Side-by-side editing using meld" title="Side-by-side editing using meld"></p>
+
+<p>Using the side-by-side editing also avoids many common erros, e.g. you will notice inline math you messed up by accident due to the highlighted changes.</p>
+
+<p>During the translation of the text from one language to another you should also consider to review a third translation as well since translations are usually not literal. Try to stay close to the original version although this may not always be possible. The order of the first translations was:</p>
+
+<pre><code>Russian -&gt; English -&gt; German
+              |          |
+              |          V
+              +-----&gt; Vietnamese
+</code></pre>
+
+<p>Hence, you should base your translation on a language that is as close as possible to the Russian original in the tree.</p>
+
+<p>Please also add your name(s) to the list of contributors at the end of the document. </p>
 
 <h3>
 <a name="improving-existing-translations" class="anchor" href="#improving-existing-translations"><span class="octicon octicon-link"></span></a>Improving existing translations</h3>
+
+<p>You found a typo? You think, the translation of one of Arnolds problems is wrong or you can improve it? You want to rebuild one (or all) of the graphics in LaTeX (e.g. TikZ)? <a href="https://github.com/IMAGINARY/Arnold5to15/issues/new">Report the issue on GitHub</a> or <a href="http://http//www.imaginary.org/contact">contact us directly</a>.</p>
 
 <h3>
 <a name="using-git-and-github" class="anchor" href="#using-git-and-github"><span class="octicon octicon-link"></span></a>Using git and GitHub</h3>
