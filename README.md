@@ -27,7 +27,7 @@ You can also consult the file `preamble.tex` for a list of used packages. `pream
 Contributing
 ------------
 
-We encourage you to add translations for new languages and to improve existing ones. 
+We encourage you to add translations for new languages and to improve existing ones. Note that your contributions will be published under the above license.
 
 ### Adding a translation
 
@@ -41,7 +41,7 @@ Now you are ready to translate the document. Please keep your document structure
 
 Using the side-by-side editing also avoids many common erros, e.g. you will notice inline math you messed up by accident due to the highlighted changes.
 
-During the translation of the text from one language to another you should also consider to review a third translation as well since translations are usually not literal. Try to stay close to the original version although this may be always possible. The current order of the first translations was:
+During the translation of the text from one language to another you should also consider to review a third translation as well since translations are usually not literal. Try to stay close to the original version although this may not always be possible. The order of the first translations was:
 ```
 Russian -> English -> German
               |          |
