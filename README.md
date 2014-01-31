@@ -24,3 +24,19 @@ Note that the documents rely on a number of recent packages. Therefore:
 
 You can also consult the file `preamble.tex` for a list of used packages. `preamble.tex` is shared by all the different translations.
 
+Contributing
+------------
+
+We encourage you to add translations for new languages and to improve existing ones. 
+
+### Adding a translation
+
+### Improving existing translations
+
+### Using git and GitHub
+
+In order to keep track of your changes, we highly recommend using the git version control system on GitHub. Ideally, you will fork this repository into your GitHub account, clone it to your local system, apply your changes to the documents, commit and push everything to GitHub and finally make a pull request so that we can check your modifications and merge them with the master branch.
+
+### New to XeLaTeX, git and GitHub?
+
+Well, learning new tools is always worth it ;-)
