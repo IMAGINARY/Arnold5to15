@@ -31,6 +31,11 @@ We encourage you to add translations for new languages and to improve existing o
 
 ### Adding a translation
 
+First create a new file called `5to15_xx_XX.tex`, where `xx_XX` is substituted according to the above specification. You should do so by copying one of the other translations, e.g. `5to15_en_GB.tex`. Since we are using the Computer Modern Unicode fonts in conjunction with XeLaTeX, you should be able to write down most of the UTF-8 characters directly without using special LaTeX notation, i.e. write `ü` instead of `\"u`. The same is true for Cyrillic, Greek, ... letters. Nevertheless, there may be other font/encoding problems we are currently not aware of.
+
+One of the first lines of your new (copied) file contains the definition of the main language of the file. You need to adjust `\setdefaultlanguage[variant=british]{english}` (in case you did copy `5to15_en_GB.tex`) to reflect the new language. See the list of supported languages in the [polyglossia](http://www.ctan.org/pkg/polyglossia) package.
+
+
 ### Improving existing translations
 
 ### Using git and GitHub
