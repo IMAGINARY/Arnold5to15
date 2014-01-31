@@ -35,9 +35,20 @@ First create a new file called `5to15_xx_XX.tex`, where `xx_XX` is substituted a
 
 One of the first lines of your new (copied) file contains the definition of the main language of the file. You need to adjust `\setdefaultlanguage[variant=british]{english}` (in case you did copy `5to15_en_GB.tex`) to reflect the new language. See the list of supported languages in the [polyglossia](http://www.ctan.org/pkg/polyglossia) package.
 
-Now you are ready to translate the document. Please keep your document structure and LaTeX source (math/figures) as close as possible to the other translations. We usually use a visual diff and merge tool to have the original and the new translation side by side. Using e.g. [meld](http://meldmerge.org/) it looks as follows:
+Now you are ready to translate the document. Please keep your document structure and LaTeX source (math/figures) as close as possible to the other translations. We usually use a visual diff and merge tool to have the original and the new translation side by side. Using e.g. [meld](http://meldmerge.org/) it looks like this:
 
-TODO: image
+![Side-by-side editing using meld](https://raw.github.com/IMAGINARY/Arnold5to15/gh-pages/images/meld.png "Side-by-side editing using meld")
+
+Using the side-by-side editing also avoids many common erros, e.g. you will notice inline math you messed up by accident due to the highlighted changes.
+
+During the translation of the text from one language to another you should also consider to review a third translation as well since translations are usually not literal. Try to stay close to the original version although this may be always possible. The current order of the first translations was:
+```
+Russian -> English -> German
+              |          |
+              |          V
+              +-----> Vietnamese
+```
+Hence, you should base your translation on a language that is as close as possible to the Russian original in the tree.
 
 ### Improving existing translations
 
