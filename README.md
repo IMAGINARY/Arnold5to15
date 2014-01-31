@@ -50,7 +50,11 @@ Russian -> English -> German
 ```
 Hence, you should base your translation on a language that is as close as possible to the Russian original in the tree.
 
+Please also add your name(s) to the list of contributors at the end of the document. 
+
 ### Improving existing translations
+
+You found a typo? You think, the translation of one of Arnolds problems is wrong or you can improve it? You want to rebuild one (or all) of the graphics in LaTeX (e.g. TikZ)? [Report the issue on GitHub]{https://github.com/IMAGINARY/Arnold5to15/issues/new} or [contact us directl]{http://http//www.imaginary.org/contact}.
 
 ### Using git and GitHub
 
