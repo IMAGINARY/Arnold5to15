@@ -1,7 +1,7 @@
 V. I. Arnold: Problems for children from 5 to 15
 ================================================
 
-This repository contains the LaTeX sources of the translations of Arnold's famous book "Problems for children from 5 to 15" derived from the Russian original http://www.mccme.ru/free-books/izdano/2004/VIA-taskbook.pdf.
+This repository contains the LaTeX sources of the translations of Arnold's famous book "Problems for children from 5 to 15" derived from the Russian original http://www.mccme.ru/free-books/izdano/2004/VIA-taskbook.pdf. The book is part of IMAGINARY, a project by the Mathematisches Forschungsinstitut Oberwolfach, supported by the Klaus Tschira Stiftung.
 
 ![V. I. Arnold](https://raw.github.com/IMAGINARY/Arnold5to15/master/resources/photo-arnold_small.jpg "V. I. Arnold")
 
