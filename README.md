@@ -49,6 +49,8 @@ Russian -> English -> German
               +-----> Vietnamese
               |
               +-----> Spanish
+              |              
+              +-----> Turkish
 ```
 Hence, you should base your translation on a language that is as close as possible to the Russian original in the tree.
 
